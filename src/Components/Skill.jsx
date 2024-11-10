@@ -51,7 +51,7 @@ const Skill = () => {
           data-aos="fade-up"
         >
           <span className="italic">Library</span> Dan
-          <span className="italic">Framework</span>
+          <span className="italic"> Framework</span>
         </h1>
         <div className="flex justify-evenly sm:justify-center sm:gap-5 items-center">
           <div

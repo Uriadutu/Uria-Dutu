@@ -10,7 +10,7 @@ const Beranda = () => {
   const [fullTextIndex, setFullTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  // Wrap the roles array in useMemo to avoid dependency issues
+  // Define roles array
   const roles = useMemo(
     () => ["WEB DEVELOPER", "FRONTEND DEVELOPER", "BACKEND DEVELOPER"],
     []
@@ -40,23 +40,32 @@ const Beranda = () => {
         <div className="flex justify-center">
           <div className="relative">
             <img
-              className="rounded-full w-52 sm:w-[100#] drop-shadow-lg border-4 border-white transition duration-300 ease-in-out transform hover:scale-105"
+              translate="no"
+              className="rounded-full w-52 sm:w-[100%] drop-shadow-lg border-4 border-white transition duration-300 ease-in-out transform hover:scale-105"
               src={profil}
-              alt=""
+              alt="Profil"
             />
             <div className="absolute bottom-2 right-0">
-              <h1 className="text-[40px] md:text-[50px]">🍒</h1>
+              <h1 translate="no" className="text-[40px] md:text-[50px]">
+                🍒
+              </h1>
             </div>
           </div>
         </div>
         <div className="col-span-1 sm:col-span-2 flex flex-col md:items-end items-center text-center md:text-right space-y-3 md:space-y-2">
           <div className="space-y-[-10px] relative">
-            <h1 className="text-[25px] md:text-[35px] lg:text-[40px] transition duration-300 ease-in-out transform hover:scale-105">
+            <h1
+              translate="no"
+              className="text-[25px] md:text-[35px] lg:text-[40px] transition duration-300 ease-in-out transform hover:scale-105"
+            >
               <span className="font-bold">Halo,</span> Saya Uria.
             </h1>
             <div className="flex relative mb-20">
               <div className="w-full flex">
-                <h1 className="text-[18px] mt-2 sm:text-[24px] font-bold transition duration-300 text-start ease-in-out transform whitespace-nowrap">
+                <h1
+                  translate="no"
+                  className="text-[18px] mt-2 sm:text-[24px] font-bold transition duration-300 text-start ease-in-out transform whitespace-nowrap"
+                >
                   {text}
                   <span className="blinking-cursor">|</span>
                 </h1>
@@ -79,10 +88,13 @@ const Beranda = () => {
           </div>
         </div>
         <div className="flex justify-center md:justify-start">
-          <Link to={"#kontak"}>
+          <Link to="#kontak">
             <div className="bg-[#222222] rounded-full p-3 hover:bg-[#333333] transition duration-300 ease-in-out transform hover:scale-105">
               <div className="flex justify-center gap-3 items-center">
-                <h1 className="text-white font-bold text-center text-lg">
+                <h1
+                  translate="no"
+                  className="text-white font-bold text-center text-lg"
+                >
                   Kontak Saya
                 </h1>
                 <FaArrowRight color="white" width={40} />
@@ -92,22 +104,27 @@ const Beranda = () => {
         </div>
         <div className="col-span-1 sm:col-span-2 flex justify-center md:justify-end">
           <div className="grid grid-cols-3 gap-4">
-            <Link
-              to={
-                "https://www.instagram.com/uriiaaaa?igsh=MXBsM2xwNnQzd25oZw=="
-              }
-            >
-              <div className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer">
+            <Link to="https://www.instagram.com/uriiaaaa">
+              <div
+                translate="no"
+                className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+              >
                 <AiFillInstagram size={25} className="text-[#E4405F]" />
               </div>
             </Link>
-            <Link to={"https://www.tiktok.com/@uriadutu_"}>
-              <div className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer">
+            <Link to="https://www.tiktok.com/@uriadutu_">
+              <div
+                translate="no"
+                className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+              >
                 <IoLogoTiktok size={25} className="text-black" />
               </div>
             </Link>
-            <Link to={"https://github.com/Uriadutu"}>
-              <div className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer">
+            <Link to="https://github.com/Uriadutu">
+              <div
+                translate="no"
+                className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+              >
                 <FaGithub size={25} className="text-black" />
               </div>
             </Link>
