@@ -37,7 +37,7 @@ const SplashScreen = () => {
           <Projek />
         </div>
       </section>
-      <section className="" id="keterampilanN">
+      <section className="" id="keterampilan">
         <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[100vh]">
           <Skill />
         </div>

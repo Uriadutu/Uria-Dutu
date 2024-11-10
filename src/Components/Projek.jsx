@@ -41,7 +41,7 @@ const Projek = () => {
               />
             </div>
           </div>
-          <h1 className="text-center mb-3 sm:mb-[70px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-md transition-colors duration-300 group-hover:text-green-600">
+          <h1 className="text-center mb-3 sm:mb-[70px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-md transition-colors duration-300 group-hover:text-blue-600">
             Dinas Pemuda Dan Olahraga Kota Manado
           </h1>
         </div>
@@ -63,7 +63,7 @@ const Projek = () => {
               />
             </div>
           </div>
-          <h1 className="text-center mb-3 sm:mb-[70px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-md transition-colors duration-300 group-hover:text-green-600">
+          <h1 className="text-center mb-3 sm:mb-[70px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-md transition-colors duration-300 group-hover:text-blue-600">
             Kantor Kementerian Agama Halmahera Barat
           </h1>
         </div>
@@ -85,7 +85,7 @@ const Projek = () => {
               />
             </div>
           </div>
-          <h1 className="text-center mb-3 sm:mb-[70px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-md transition-colors duration-300 group-hover:text-green-600">
+          <h1 className="text-center mb-3 sm:mb-[70px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-md transition-colors duration-300 group-hover:text-blue-600">
             Victoria Inn Manado
           </h1>
         </div>
