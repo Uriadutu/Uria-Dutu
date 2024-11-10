@@ -10,7 +10,6 @@ const Beranda = () => {
   const [fullTextIndex, setFullTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  // Define roles array
   const roles = useMemo(
     () => ["WEB DEVELOPER", "FRONTEND DEVELOPER", "BACKEND DEVELOPER"],
     []
@@ -35,13 +34,13 @@ const Beranda = () => {
   }, [charIndex, fullTextIndex, roles]);
 
   return (
-    <div className="flex h-full w-full sm:px-20 px-4 sm:py-10">
+    <div className="flex h-full w-full sm:px-20 px-4 sm:py-10 ">
       <div className="grid grid-cols-1 sm:grid-cols-3 w-full items-center gap-y-6 sm:gap-x-8">
         <div className="flex justify-center">
           <div className="relative">
             <img
               translate="no"
-              className="rounded-full w-52 sm:w-[100%] drop-shadow-lg border-4 border-white transition duration-300 ease-in-out transform hover:scale-105"
+              className="rounded-full w-52 sm:w-[100%] drop-shadow-lg border-4 border-white dark:border-gray-800 transition duration-300 ease-in-out transform hover:scale-105"
               src={profil}
               alt="Profil"
             />
@@ -56,7 +55,7 @@ const Beranda = () => {
           <div className="space-y-[-10px] relative">
             <h1
               translate="no"
-              className="text-[25px] md:text-[35px] lg:text-[40px] transition duration-300 ease-in-out transform hover:scale-105"
+              className="text-[25px] md:text-[35px] lg:text-[40px] transition duration-300 ease-in-out transform hover:scale-105 dark:text-gray-300"
             >
               <span className="font-bold">Halo,</span> Saya Uria.
             </h1>
@@ -64,7 +63,7 @@ const Beranda = () => {
               <div className="w-full flex">
                 <h1
                   translate="no"
-                  className="text-[18px] mt-2 sm:text-[24px] font-bold transition duration-300 text-start ease-in-out transform whitespace-nowrap"
+                  className="text-[18px] mt-2 sm:text-[24px] font-bold transition duration-300 text-start ease-in-out transform whitespace-nowrap dark:text-gray-300"
                 >
                   {text}
                   <span className="blinking-cursor">|</span>
@@ -74,14 +73,14 @@ const Beranda = () => {
           </div>
           <div className="w-full md:w-[60%] lg:w-[50%]">
             <div className="grid grid-cols-2 gap-0 mt-4">
-              <h1 className="text-semibold">Backend</h1>
-              <h1 className="text-semibold text-[#000AC1]">
+              <h1 className="text-semibold dark:text-gray-300">Backend</h1>
+              <h1 className="text-semibold text-[#000AC1] dark:text-[#4F86F7]">
                 &#9733;&#9733;&#9733;&#9734;&#9734;
               </h1>
             </div>
             <div className="grid grid-cols-2 gap-0">
-              <h1 className="text-semibold">Frontend</h1>
-              <h1 className="text-semibold text-[#000AC1]">
+              <h1 className="text-semibold dark:text-gray-300">Frontend</h1>
+              <h1 className="text-semibold text-[#000AC1] dark:text-[#4F86F7]">
                 &#9733;&#9733;&#9733;&#9734;&#9734;
               </h1>
             </div>
@@ -89,11 +88,11 @@ const Beranda = () => {
         </div>
         <div className="flex justify-center md:justify-start">
           <Link to="#kontak">
-            <div className="bg-[#222222] rounded-full p-3 hover:bg-[#333333] transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="bg-[#222222] dark:bg-[#444444] rounded-full p-3 hover:bg-[#333333] dark:hover:bg-[#555555] transition duration-300 ease-in-out transform hover:scale-105">
               <div className="flex justify-center gap-3 items-center">
                 <h1
                   translate="no"
-                  className="text-white font-bold text-center text-lg"
+                  className="text-white font-bold text-center text-lg dark:text-gray-100"
                 >
                   Kontak Saya
                 </h1>
@@ -107,7 +106,7 @@ const Beranda = () => {
             <Link to="https://www.instagram.com/uriiaaaa">
               <div
                 translate="no"
-                className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+                className="border-2 border-gray-300 rounded-full bg-white dark:bg-gray-800 p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
               >
                 <AiFillInstagram size={25} className="text-[#E4405F]" />
               </div>
@@ -115,17 +114,17 @@ const Beranda = () => {
             <Link to="https://www.tiktok.com/@uriadutu_">
               <div
                 translate="no"
-                className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+                className="border-2 border-gray-300 rounded-full bg-white dark:bg-gray-800 p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
               >
-                <IoLogoTiktok size={25} className="text-black" />
+                <IoLogoTiktok size={25} className="text-black dark:text-gray-300" />
               </div>
             </Link>
             <Link to="https://github.com/Uriadutu">
               <div
                 translate="no"
-                className="border-2 border-gray-300 rounded-full bg-white p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+                className="border-2 border-gray-300 rounded-full bg-white dark:bg-gray-800 p-3 opacity-50 hover:opacity-100 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
               >
-                <FaGithub size={25} className="text-black" />
+                <FaGithub size={25} className="text-black dark:text-gray-300" />
               </div>
             </Link>
           </div>
