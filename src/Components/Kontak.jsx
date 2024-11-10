@@ -2,9 +2,9 @@ import React from "react";
 import { IoSendSharp } from "react-icons/io5";
 const Kontak = () => {
   return (
-    <div className="flex px-20 w-full justify-center  mt-20">
+    <div className="flex sm:px-20 w-full justify-center px-4  sm:mt-20">
       <div className="">
-        <h1 className="text-center mb-3 sm:mb-[30px] text-gray-700 font-medium pt-5 text-xl w-full sm:text-[35px]">
+        <h1 className="text-center mb-3 sm:mb-[30px] text-gray-700 font-medium pt-5  w-full text-[35px]">
           Kontak
         </h1>
         <h1 className="text-center mb-3 sm:mb-3 text-gray-700 pt-5 text-xl w-full sm:text-[20px]">

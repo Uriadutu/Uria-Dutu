@@ -20,7 +20,7 @@ const SplashScreen = () => {
 
   return (
     <>
-      <section className="" id="beranda">
+      <section className="pt-12 sm:pt-0" id="beranda">
         <div className="flex mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[100vh]">
           <div className=" flex pt-10 w-full justify-center bg-opacity-100 rounded-t-lg">
             <Beranda />
@@ -28,7 +28,7 @@ const SplashScreen = () => {
         </div>
       </section>
       <section className="" id="tentangsaya">
-        <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[60vh]">
+        <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[60vh] sm:h-[60vh]">
           <TentangSaya />
         </div>
       </section>
@@ -37,18 +37,16 @@ const SplashScreen = () => {
           <Projek />
         </div>
       </section>
-        <section className="" id="penguasaan">
-      <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[100vh]">
-            <Skill />
-          
-      </div>
-        </section>
-        <section className="" id="kontak">
-      <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[100vh]">
-            <Kontak />
-          
-      </div>
-        </section>
+      <section className="" id="keterampilanN">
+        <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[100vh]">
+          <Skill />
+        </div>
+      </section>
+      <section className="" id="kontak">
+        <div className="flex sm:mt-20 mt-10 mr-0 justify-center sm:justify-start  w-full h-[90vh] sm:h-[100vh]">
+          <Kontak />
+        </div>
+      </section>
     </>
   );
 };
