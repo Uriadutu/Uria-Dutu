@@ -42,6 +42,7 @@ const Navbar = () => {
               (section) => (
                 <Link
                   key={section}
+                  translate="no"
                   to={`#${section}`}
                   className={`text-sm sm:text-lg p-1 font-medium text-gray-600 dark:text-gray-300 rounded-lg
                           transition-all duration-300 ease-in-out transform
