@@ -79,8 +79,8 @@ const Beranda = () => {
               </h1>
             </div>
             <div className="grid grid-cols-2 gap-0">
-              <h1 className="text-semibold dark:text-gray-300">Frontend</h1>
-              <h1 className="text-semibold text-[#000AC1] dark:text-[#4F86F7]">
+              <h1 translate="no" className="text-semibold dark:text-gray-300">Frontend</h1>
+              <h1 translate="no" className="text-semibold text-[#000AC1] dark:text-[#4F86F7]">
                 &#9733;&#9733;&#9733;&#9734;&#9734;
               </h1>
             </div>
